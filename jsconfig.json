@@ -3,6 +3,7 @@
     "node_modules"
   ],
   "compilerOptions": {
-    "checkJs": true
+    "checkJs": true,
+    "lib": ["es6","dom"]
   }
 }

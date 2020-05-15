@@ -8,16 +8,17 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "tsc": "tsc --allowJs --checkJs --noEmit src/*",
-    "// or if you want tsc to generate d.ts": "tsc --allowJs --checkJs --declaration --emitDeclarationOnly --outDir=types src/*",
+    "tsc": "tsc --allowJs --checkJs --noEmit --target ES6 src/**/*",
+    "// or if you want tsc to generate d.ts": "tsc --allowJs --checkJs --declaration --emitDeclarationOnly --outDir=types --target ES6 src/**/*",
     "check": "npm run lint && npm run tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "semistandard": "^14.2.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.3",
+    "babel-eslint": "^10.1.0"
   }
 }

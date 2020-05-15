@@ -2,21 +2,19 @@
  * A kind of enum
  * @enum {number}
  */
-const logicValues = {
+const LogicValues = {
   TRUE: 1,
   FALSE: -1,
   MAYBE: 0
 };
 
-/** @typedef {logicValues} LogicValues */
-
 /**
  * @param {string} a
- * @param {logicValues} b
+ * @param {LogicValues} b
  * @returns {string} the same string, modified
  */
 function someFunctionality (a, b) {
-  if (b === logicValues.TRUE) {
+  if (b === LogicValues.TRUE) {
     return a.toLowerCase();
   } else {
     return a.toUpperCase();

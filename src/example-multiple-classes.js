@@ -1,14 +1,10 @@
 class MyFirstClass {
-  constructor () {
-    this.member1 = 0;
-    this.member2 = 'hey';
-  }
+  member1 = 0;
+  member2 = 'hey';
 }
 
 class MySecondClass {
-  constructor () {
-    this.member3 = 10;
-  }
+  member3 = 10;
 
   /**
    * Takes two numbers and returns their sum
