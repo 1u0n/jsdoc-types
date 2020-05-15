@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "lint": "eslint .",
-    "tsc": "tsc --allowJs --checkJs --noEmit --target ES6 src/**/*",
-    "// or if you want tsc to generate d.ts": "tsc --allowJs --checkJs --declaration --emitDeclarationOnly --outDir=types --target ES6 src/**/*",
+    "lint": "eslint src",
+    "tsc": "tsc --allowJs --checkJs --noEmit --target ES6 src/*",
+    "// or if you want tsc to generate d.ts": "tsc --allowJs --checkJs --declaration --emitDeclarationOnly --outDir=types --target ES6 src/*",
     "check": "npm run lint && npm run tsc"
   },
   "keywords": [],

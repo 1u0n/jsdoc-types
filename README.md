@@ -15,7 +15,6 @@ you get the benefits of typescript, but writing JS + JSDOC code
 
 * values and types exist in different planes. `Class myClass {...}` , `let foo = ...` will create the values (that your code can use, call...) and the types (usable in jsdoc). `/** @typedef {number} someType */` will only create the type, and automatically export it.
 * every file has its own scope. A **value** defined inside file1 is only usable from file2 if file1 exports it. A **type** from file1 is usable in file2 if it is the type of an exported value, or if in file1 we do `/** @typedef {unexportedValue} MyExportedType */`
-* when defining classes in a dependency, export them using `exports.MyClass = MyClass` otherwise the class type will block other types you want to export from that file
 
 A couple of examples are given in code to illustrate these problems.
 

@@ -17,5 +17,4 @@ class MySecondClass {
   }
 }
 
-exports.MyFirstClass = MyFirstClass;
-exports.MySecondClass = MySecondClass;
+module.exports = { MyFirstClass, MySecondClass };
