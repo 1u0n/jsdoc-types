@@ -8,8 +8,8 @@
   },
   "scripts": {
     "lint": "eslint src",
-    "tsc": "tsc --allowJs --checkJs --noEmit --target ES6 src/*",
-    "// or if you want tsc to generate d.ts": "tsc --allowJs --checkJs --declaration --emitDeclarationOnly --outDir=types --target ES6 src/*",
+    "tsc": "tsc --allowJs --checkJs --noEmit src/*",
+    "// or if you want tsc to generate d.ts": "tsc --allowJs --checkJs --declaration --emitDeclarationOnly --outDir=types src/*",
     "check": "npm run lint && npm run tsc"
   },
   "keywords": [],
@@ -18,7 +18,7 @@
   "devDependencies": {
     "eslint": "^7.0.0",
     "semistandard": "^14.2.0",
-    "typescript": "^3.8.3",
-    "babel-eslint": "^10.1.0"
+    "babel-eslint": "^10.1.0",
+    "typescript": "^3.9.2"
   }
 }

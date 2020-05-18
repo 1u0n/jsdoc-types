@@ -1,0 +1,15 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "extends": "semistandard",
+  "parser": "babel-eslint",
+  "ignorePatterns": [
+    "**/coverage",
+    ".vscode",
+    ".git",
+    "**/build"
+  ]
+}
